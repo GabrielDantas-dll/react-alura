@@ -5,16 +5,6 @@ import { useState } from "react";
 import "./Formulario.css";
 
 export const Formulario = (props) => {
-  const times = [
-    "Programação",
-    "Front-end",
-    "Data Sciense",
-    "Devops",
-    "UX e Desing",
-    "Mobile",
-    "Inovação e gestão",
-  ];
-
   const [nome, setNome] = useState();
   const [cargo, setCargo] = useState();
   const [imagem, setImagem] = useState();
@@ -58,8 +48,8 @@ export const Formulario = (props) => {
         <ListaSuspensa
           obrigatorio={true}
           label="Time"
-          itens={times}
-          valor={time}
+          itens={props.equipes}
+          // valor={equipe}
           aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar card</Botao>

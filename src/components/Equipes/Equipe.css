@@ -1,0 +1,18 @@
+.equipe {
+    text-align: center;
+    padding: 32px;
+}
+
+.equipe h3 {
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.equipe .colaboradores {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
